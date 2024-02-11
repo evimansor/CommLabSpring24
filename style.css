@@ -1,0 +1,46 @@
+body, html {
+    margin: 10;
+    padding: 10;
+    width: 100%;
+    height: 100%;
+    }
+
+    .parent {
+        background-color: lightblue; /* Change this to the desired color */
+        padding: 10px; /* Adjust as needed */
+    }
+
+    .child-1, .child-2, .child-3 {
+        padding: 10px;
+        margin: 5px 0; /* Adjust space between children */
+    }
+
+    .child-1 {
+        background-color: lightgreen; 
+        position: static;
+        top:0px;
+        left:0px;
+    }
+
+    .child-2 {
+        background-color: lightcoral;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        
+    }
+
+    .child-3 {
+        background-color: lightpink; /* Change this to the desired color */
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .parent > p, .child-1 > p, .child-2 > p, .child-3 > p {
+        margin: 0;
+        padding: 20px 0; /* Adjust padding to match the design */
+        
+        color: black; /* Change text color as needed */
+        font-size: 24px; /* Adjust font size as needed */
+    }
